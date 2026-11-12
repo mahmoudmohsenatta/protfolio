@@ -1,0 +1,10 @@
+{
+  "name": "@sahm/api",
+  "version": "1.0.0",
+  "description": "Typed data & AI adapter layer with Supabase REST support and offline mock fallback.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "commonjs",
+  "license": "MIT"
+}
+

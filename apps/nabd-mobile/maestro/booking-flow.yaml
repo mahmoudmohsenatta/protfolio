@@ -1,0 +1,23 @@
+appId: sa.nabd.mobile
+---
+# End-to-End Maestro Flow: Onboarding -> OTP Auth -> Book Activity -> QR Ticket
+- launchApp:
+    clearState: true
+- assertVisible: "Choose your language|اختر لغتك"
+- tapOn: "English"
+- tapOn: "Continue"
+- tapOn: "Skip"
+- tapOn: "Fitness"
+- tapOn: "Wellness"
+- tapOn: "Get started"
+- tapOn: "Send code"
+- tapOn: "Verify"
+- inputText: "Yazeed"
+- tapOn: "Get started"
+- assertVisible: "Credit balance"
+- tapOn: "Explore"
+- tapOn: "Sunset Vinyasa Yoga"
+- tapOn: "Book for"
+- tapOn: "Confirm"
+- assertVisible: "Your ticket"
+

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FBF8F3;
+  --surface: #FFFFFF;
+  --surface-alt: #F6F1EA;
+  --ink: #100B2C;
+  --ink-muted: #52525C;
+  --border: #E9DFD0;
+  --coral: #FF5A36;
+  --indigo: #211A57;
+  --terracotta: #B5653A;
+  --mint: #14B8A6;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-plex), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-plex), system-ui, sans-serif;
+}
+
+/* Native <dialog> scroll-containment & backdrop polish */
+dialog:modal {
+  overscroll-behavior: contain;
+  margin: auto;
+  max-inline-size: min(92dvw, 44rem);
+  max-block-size: 88dvh;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+dialog::backdrop {
+  background: rgba(16, 11, 44, 0.56);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+  }
+}

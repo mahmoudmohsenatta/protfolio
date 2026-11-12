@@ -1,0 +1,10 @@
+{
+  "name": "@sahm/tokens",
+  "version": "1.0.0",
+  "description": "Sahm — bilingual (AR/EN) design tokens shared by Nabd (mobile) and Dar (web).",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "files": ["index.js", "index.d.ts", "tailwind-preset.js"]
+}
+

@@ -1,0 +1,15 @@
+{
+  "name": "sahm-portfolio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:portfolio": "npm --prefix apps/portfolio run dev",
+    "dev:dar": "npm --prefix apps/dar-web run dev -- -p 3001",
+    "dev:partner": "npm --prefix apps/nabd-partner run dev -- -p 3002",
+    "dev:mobile": "npm --prefix apps/nabd-mobile run start",
+    "lint:all": "npm --prefix apps/nabd-mobile run lint && npm --prefix apps/portfolio run lint && npm --prefix apps/dar-web run lint && npm --prefix apps/nabd-partner run lint",
+    "build:webs": "npm --prefix apps/portfolio run build && npm --prefix apps/dar-web run build && npm --prefix apps/nabd-partner run build",
+    "test:mobile": "npm --prefix apps/nabd-mobile test"
+  }
+}
+
