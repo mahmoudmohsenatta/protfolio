@@ -10,7 +10,7 @@ export const CANDIDATE = {
   telHref: 'tel:+201097908137',
   links: {
     // Update with your exact profile URLs before deploying
-    github: 'https://github.com/mahmoudmohsenatta/mahmoud-mohsen.git',
+    github: 'https://github.com/mahmoudmohsenatta/protfolio.git',
     linkedin: 'https://www.linkedin.com/in/mahmoud-mohsen-9684601b5/',
     behance: 'https://behance.net',
     figmaSystem: '#design-system',
